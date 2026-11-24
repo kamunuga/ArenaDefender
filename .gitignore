@@ -1,0 +1,14 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Test results / coverage
+TestResults/
+coverage*.xml
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Arena Defender",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/ArenaDefender/bin/Debug/net9.0/ArenaDefender.dll",
+      "cwd": "${workspaceFolder}/src/ArenaDefender",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}
