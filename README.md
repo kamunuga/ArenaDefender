@@ -96,8 +96,8 @@ ArenaDefender/
 
 ## Documentation
 
-- [Application Design Document]: architecture, diagrams, patterns, data structures and where each maths concept is used.
-- [Testing Strategy]: approach, edge cases, results and a failing-test story.
+- Application Design Document: architecture, diagrams, patterns, data structures and where each maths concept is used.
+- Testing Strategy: approach, edge cases, results and a failing-test story.
 
 
 Public types and members carry XML documentation comments (`///`), and the projects generate XML documentation files on build.
