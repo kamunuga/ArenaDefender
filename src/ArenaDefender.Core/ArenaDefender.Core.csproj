@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    ArenaDefender.Core holds ALL of the game rules (movement, combat, scoring,
+    difficulty, collisions, power-ups, high scores). It has no dependency on
+    MonoGame, so it can be unit tested without a graphics device and could be
+    reused by a different front-end.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ArenaDefender.Core</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Lets the test project use internal helpers (e.g. Projectile.Reset). -->
+    <InternalsVisibleTo Include="ArenaDefender.Tests" />
+  </ItemGroup>
+
+</Project>
