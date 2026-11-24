@@ -40,15 +40,15 @@ You are the last defender in a neon arena. Waves of enemies pour in from the edg
 ## How to run
 
 ### Requirements
-- **.NET 9 SDK or later**. Check with `dotnet --version`.
-- **Visual Studio Code** with the *C# Dev Kit* extension (recommended).
+- **.NET 9 SDK **.
+- **Visual Studio Code** with the *C# Dev Kit* extension.
 - Windows, macOS (Intel or Apple Silicon) or Linux.
 
 MonoGame is downloaded automatically from NuGet as a package. **No content pipeline or asset files are needed.** All graphics (shapes and the pixel font) are generated in code.
 
 ### Run the game
 ```bash
-git clone https://github.com/<your-username>/ArenaDefender.git
+git clone https://github.com/kamunuga/ArenaDefender.git
 cd ArenaDefender
 dotnet run --project src/ArenaDefender
 ```
@@ -96,9 +96,9 @@ ArenaDefender/
 
 ## Documentation
 
-- [Application Design Document](docs/ARCHITECTURE.md): architecture, diagrams, patterns, data structures and where each maths concept is used.
-- [Testing Strategy](docs/TESTING.md): approach, edge cases, results and a failing-test story.
-- [Presentation Notes](docs/PRESENTATION_NOTES.md): prepared answers to the assessment questions.
+- [Application Design Document]: architecture, diagrams, patterns, data structures and where each maths concept is used.
+- [Testing Strategy]: approach, edge cases, results and a failing-test story.
+
 
 Public types and members carry XML documentation comments (`///`), and the projects generate XML documentation files on build.
 
@@ -113,4 +113,4 @@ Public types and members carry XML documentation comments (`///`), and the proje
 
 ## Author
 
-Nkingi Gakindi Chris, BSc Software Engineering, African Leadership University
+Gael Mparaye, BSc Software Engineering, African Leadership University
