@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    ArenaDefender is the MonoGame front-end: windows, input, drawing, menus and effects.
+    All gameplay rules live in ArenaDefender.Core; this project only translates input into
+    PlayerInput, calls GameWorld.Update and draws what the world contains.
+
+    Graphics are generated in code at start-up (circles, triangles and a pixel font), so the
+    project needs no content pipeline (no .mgcb files or font assets) and builds the same way
+    on Windows, macOS and Linux.
+  -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ArenaDefender</RootNamespace>
+    <AssemblyName>ArenaDefender</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TieredPGO>true</TieredPGO>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Any MonoGame 3.8.x release works (3.8.2 or newer recommended for Apple Silicon Macs). -->
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArenaDefender.Core\ArenaDefender.Core.csproj" />
+  </ItemGroup>
+
+</Project>
